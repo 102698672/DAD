@@ -34,9 +34,9 @@ INSERT INTO Club (ClubName, ContactName)
 
 Values 
 ('Mt Martha Basketball Club', 'Bob Jane'),
-('Mt Martha Basketball Club', 'Johnald'),
-('Mt Martha Basketball Club', 'Jimothy'),
-('Mt Martha Basketball Club', 'Jane Bob');
+('Mt George Basketball Club', 'Johnald'),
+('Mt Mountain Basketball Club', 'Jimothy'),
+('Mt Mount Basketball Club', 'Jane Bob');
 
 CREATE TABLE Season (
 SeasonYear INT, 
@@ -69,8 +69,8 @@ Foreign Key (SeasonYear, SeasonName) References Season
 INSERT INTO TeamEntry (ClubName, SeasonYear, SeasonName, AgeGroup, TeamNumber)Values
 ('Mt Martha Basketball Club', 2018, 'Summer', 'U14', 1),
 ('Mt Martha Basketball Club', 2018, 'Summer', 'U14', 2),
-('Mt Martha Basketball Club', 2019, 'Summer', 'U16', 3),
-('Mt Martha Basketball Club', 2019, 'Summer', 'U18', 4);
+('Mt Mountain Basketball Club', 2019, 'Summer', 'U16', 3),
+('Mt Mount Basketball Club', 2019, 'Summer', 'U18', 4);
 
 CREATE TABLE PlayerRegistration (
 PlayerID INT, 
