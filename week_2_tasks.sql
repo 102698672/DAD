@@ -83,13 +83,13 @@ DateRegistered DATE,
 
 Primary Key (PlayerID, ClubName, SeasonYear, SeasonName, AgeGroup, TeamNumber, DateRegistered),
 Foreign Key (ClubName, SeasonYear, SeasonName, AgeGroup, TeamNumber) References TeamEntry,
-
+Foreign Key (PlayerID) References Player
 );
 
 INSERT INTO PlayerRegistration (PlayerID, ClubName, SeasonYear, SeasonName, AgeGroup, TeamNumber, DateRegistered)Values
 (10002, 'Mt Martha Basketball Club', 2018,'Winter', 'U14', 1, '12/05/2018'),
 (10003, 'Mt Martha Basketball Club', 2018,'Summer', 'U14', 2, '8/01/2018'),
-(10001, 'Mt Martha Basketball Club', 2019,'Winter', 'U16', 3, '12/04/2019'),
-(10004, 'Mt Martha Basketball Club', 2019,'Summer', 'U18', 4, '15/05/2019');
+(10001, 'Mt Mountain Basketball Club', 2019,'Winter', 'U16', 3, '12/04/2019'),
+(10004, 'Mt Mount Basketball Club', 2019,'Summer', 'U18', 4, '15/05/2019');
 
 SELECT * FROM PlayerRegistration
